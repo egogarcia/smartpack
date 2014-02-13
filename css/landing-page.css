@@ -1,11 +1,19 @@
 body, html {
 	height: 100%;
 	width: 100%;
+	font-size: 18px;
+	color: #404040;
 }
 
 body, h1, h2, h3, h4, h5, h6 {
 	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 700;
+}
+ h1, h2, h3, h4, h5, h6 {
+	color: black;
+}
+small{
+font-size: 10px;
 }
 
 .lead {
@@ -26,15 +34,11 @@ body, h1, h2, h3, h4, h5, h6 {
 	
 }
 .nube{
-    position:relative;
-    top: -55px;
     background: url(../img/nube.png) no-repeat ;
     
 }
 
 .intro-message {
-    position:relative;
-    top: 60px;
 	color: #404040;
 	position: relative;
 	padding-bottom: 42%;
@@ -58,10 +62,24 @@ body, h1, h2, h3, h4, h5, h6 {
 	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
     padding-right: -30px;
 }
+@media (min-width: 992px) {
+	.intro-message {
+		margin-top: 5%;
+		margin-left: 6%;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.intro-message {
+		padding-top: 6%;
+		margin-left: 9%;
+	}
+}
 
 @media (max-width: 767px) {
+
 	.intro-message {
-		padding-bottom: 15%;
+
+		margin-left: 16%;
 	}
 
 	.intro-message > h1 {
